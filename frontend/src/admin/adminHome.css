@@ -1,0 +1,146 @@
+.pageWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  max-height: auto;
+  background-color:black;
+  padding: 20px 0;
+  overflow-y:none;
+
+}
+
+
+/* Labels */
+#adminSignUp {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  height: 90vh;
+  overflow-y: auto;
+  margin-top: 50px;
+  border: 2px solid #ddd;
+  width: 40%;
+  margin-left: 10%;
+}
+@media (max-width: 468px) {
+  #adminSignUp {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+  }
+}
+
+#adminLogin {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  height: 90vh;
+  overflow-y: auto;
+  margin-top: 50px;
+  border: 2px solid #ddd;
+  width: 40%;
+  margin-left: 10%;
+}
+@media (max-width: 468px) {
+  #adminLogin {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+  }
+}
+
+
+
+
+
+
+
+.inputLabel {
+  font-size: 12px;
+  margin-bottom: 4px;
+  display: block;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Underline-only Input Style */
+.underline-input {
+  padding: 8px 5px;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: #000;
+  transition: 0.25s;
+}
+
+.underline-input:focus {
+  border-bottom: 2px solid #333;
+}
+
+/* Left Info Section */
+.signup-info {
+  padding-right: 20px;
+}
+#signupInfo {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+#loginInfo {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+.info-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.info-text {
+  color: #444;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+
+
+.icon-green { color: green; }
+.icon-red { color: red; }
+
+#signup-btn{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+#login-btn{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}

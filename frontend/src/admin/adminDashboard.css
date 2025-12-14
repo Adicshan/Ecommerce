@@ -1,0 +1,286 @@
+/* WRAPPER */
+.admin-wrapper {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+/* ------------------ HAMBURGER (Minimal) ------------------ */
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #111;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* ------------------ SIDEBAR (Common) ------------------ */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 26px 18px;
+  background: #ffffff;
+  border-right: 1px solid #e3e3e3;
+  font-family: "Inter", sans-serif;
+  transition: transform 0.3s ease;
+}
+
+/* Title */
+.sidebar-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+/* ------------------ Sidebar Buttons ------------------ */
+.sidebar-btn {
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  background: #f9f9f9;
+  font-size: 13px;
+  color: #111;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.sidebar-btn:hover {
+  background: #efefef;
+}
+
+.sidebar-btn.active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* ------------------ Add Product Button ------------------ */
+.add-product-btn {
+  padding: 10px 14px;
+  margin-top: 15px;
+  font-size: 13px;
+  background: #111;
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.add-product-btn:hover {
+  background: #000;
+  transform: scale(1.02);
+}
+
+/* ------------------ MOBILE VIEW ------------------ */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    z-index: 1500;
+    box-shadow: 2px 0px 10px rgba(0,0,0,0.08);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+.main-content {
+  margin-left: 230px;
+  width: calc(100% - 230px);
+
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+
+
+}
+
+.top{
+  display: flex;
+  width: 100%;
+  height: 8vh;
+ 
+  margin-bottom: 0px;
+}
+.table{
+  width: 100%;
+  height: 90vh;
+  padding:0;
+  overflow-y: scroll;
+}
+
+.top-btn{
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.top-btn:hover{
+  background-color: #000;
+  color:#fff;
+}
+@media (max-width: 468px) {
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+
+/* Admin Orders Table */
+#adminTable {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: black;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.admin-table thead th {
+  background: #111 !important;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  padding: 12px 10px;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* Body Cells */
+.admin-table tbody td {
+  padding: 10px 10px;
+  color: #222;
+  vertical-align: top;
+  border-bottom: 1px solid #eee;
+}
+
+/* Hover effect */
+.admin-table tbody tr:hover {
+  background: #f8f8f8;
+}
+
+/* Order ID */
+.admin-table td:first-child {
+  font-size: 11px;
+  color: #555;
+  font-family: monospace;
+}
+
+/* Address column */
+.admin-table td:nth-child(5) {
+  max-width: 220px;
+  font-size: 11px;
+  color: #555;
+}
+
+/* Items list */
+.admin-items {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.admin-items li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.admin-items li:last-child {
+  border-bottom: none;
+}
+
+/* Item image */
+.admin-item-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+/* Item text */
+.admin-item-info {
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.admin-item-info strong {
+  font-size: 12px;
+  color: #111;
+}
+
+/* Date column */
+.admin-date {
+  font-size: 11px;
+  color: #666;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-table {
+    font-size: 11px;
+  }
+
+  .admin-table thead {
+    display: none;
+  }
+
+  .admin-table tbody tr {
+    display: block;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    padding: 10px;
+  }
+
+  .admin-table tbody td {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    padding: 6px 0;
+  }
+
+  .admin-table tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #444;
+  }
+}

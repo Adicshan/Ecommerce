@@ -1,0 +1,151 @@
+.cart-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 5%;
+  gap: 20px;
+  background-color: white;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* 🔙 Back button (fixed top-left) */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 25px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.back-button:hover {
+  background: #000;
+  color: #fff;
+}
+.back-icon {
+  font-size: 16px;
+}
+
+/* 🛍️ Left Section */
+.cart-left {
+  flex: 1;
+  min-width: 60%;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-right: 20px;
+}
+.cart-left h2 {
+  margin-bottom: 15px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.cart-details {
+  margin-left: 15px;
+}
+.price {
+  font-weight: bold;
+  color: #000;
+}
+.delivery {
+  color: gray;
+  font-size: 13px;
+}
+
+/* 💵 Right Section: Billing */
+.cart-right {
+  width: 30%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: sticky;
+  top: 80px;
+  height: fit-content;
+}
+
+.bill-details p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.total {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.place-order-btn {
+  display: block;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+.place-order-btn:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .cart-page {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+  }
+
+  .cart-left,
+  .cart-right {
+    width: 100%;
+    max-width: 95%;
+  }
+
+  .cart-item {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .cart-img {
+    margin-bottom: 10px;
+  }
+
+  .cart-right {
+    position: static;
+    margin-top: 20px;
+  }
+}

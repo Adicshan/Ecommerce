@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "image": "p1.png",
+    "name": "JC5090",
+    "price": 750,
+    "description": "Beautiful blouse design.",
+    "dimensions": {
+      "height": "14 inch",
+      "width": "17 inch"
+    },
+    "stitchDetails": {
+      "back": "98000",
+      "hand": "64300"
+    }
+  },
+  {
+    "id": 2,
+    "image": "p2.png",
+    "name": "JC5091",
+    "price": 820,
+    "description": "Beautiful blouse design.",
+    "dimensions": {
+      "height": "14 inch",
+      "width": "17 inch"
+    },
+    "stitchDetails": {
+      "back": "96000",
+      "hand": "62000"
+    }
+  },
+  {
+    "id": 3,
+    "image": "p3.png",
+    "name": "JC5092",
+    "price": 680,
+    "description": "Beautiful blouse design.",
+    "dimensions": {
+      "height": "14 inch",
+      "width": "17 inch"
+    },
+    "stitchDetails": {
+      "back": "100000",
+      "hand": "68000"
+    }
+  },
+  {
+    "id": 4,
+    "image": "p4.png",
+    "name": "JC5093",
+    "price": 900,
+    "description": "Beautiful blouse design.",
+    "dimensions": {
+      "height": "14 inch",
+      "width": "17 inch"
+    },
+    "stitchDetails": {
+      "back": "89000",
+      "hand": "59000"
+    }
+  },
+  {
+    "id": 5,
+    "image": "p5.png",
+    "name": "JC5094",
+    "price": 720,
+    "description": "Beautiful blouse design.",
+    "dimensions": {
+      "height": "14 inch",
+      "width": "17 inch"
+    },
+    "stitchDetails": {
+      "back": "94000",
+      "hand": "64000"
+    }
+  },
+  {
+    "id": 6,
+    "image": "p6.png",
+    "name": "JC5095",
+    "price": 980,
+    "description": "Beautiful blouse design.",
+    "dimensions": {
+      "height": "14 inch",
+      "width": "17 inch"
+    },
+    "stitchDetails": {
+      "back": "97000",
+      "hand": "66000"
+    }
+  },
+  {
+    "id": 7,
+    "image": "p7.png",
+    "name": "JC5096",
+    "price": 650,
+    "description": "Beautiful blouse design.",
+    "dimensions": {
+      "height": "14 inch",
+      "width": "17 inch"
+    },
+    "stitchDetails": {
+      "back": "92000",
+      "hand": "60000"
+    }
+  },
+  {
+    "id": 8,
+    "image": "p8.png",
+    "name": "JC5097",
+    "price": 890,
+    "description": "Beautiful blouse design.",
+    "dimensions": {
+      "height": "14 inch",
+      "width": "17 inch"
+    },
+    "stitchDetails": {
+      "back": "88000",
+      "hand": "55000"
+    }
+  },
+  {
+    "id": 9,
+    "image": "p9.png",
+    "name": "JC5098",
+    "price": 560,
+    "description": "Beautiful blouse design.",
+    "dimensions": {
+      "height": "14 inch",
+      "width": "17 inch"
+    },
+    "stitchDetails": {
+      "back": "91000",
+      "hand": "58000"
+    }
+  }
+]
