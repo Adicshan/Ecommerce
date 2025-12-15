@@ -7,7 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 function Account() {
   const navigate = useNavigate();
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const [productList, setProductList] = useState([]);
   const [activeCategory, setActiveCategory] = useState("");
   const [searchText,setSearchText]=useState("");
