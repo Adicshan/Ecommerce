@@ -54,7 +54,7 @@ function Cart({ cart, setCart, clearCart }) {
 
           {cart.length === 0 && <p>No items in cart.</p>}
 
-          <div style={{ maxHeight: "420px", overflowY: "auto" }}>
+          <div style={{ maxHeight: "421px", overflowY: "auto" }}>
             {cart.map((item) => (
               <div
                 key={`${item._id}-${item.userEmail}`}
