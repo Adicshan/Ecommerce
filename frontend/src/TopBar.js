@@ -10,7 +10,6 @@ const homeIcon = `${process.env.PUBLIC_URL}/images/house.png`;
 
 export default function TopBar({ cartCount }) {
   const navigate = useNavigate();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const user = JSON.parse(localStorage.getItem("user") || "null");
 

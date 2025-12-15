@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Chart from "chart.js/auto";
-import AdminChart from "./adminChart";
+
 import "./adminDashboard.css";
 
 function AdminDashboard() {
@@ -10,8 +9,8 @@ function AdminDashboard() {
   const [products, setProducts] = useState([]);
   const [orders, setOrders] = useState([]);
 
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+ 
+
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeTable, setActiveTable] = useState("orders"); // NEW
@@ -20,14 +19,14 @@ function AdminDashboard() {
 
   const fetchData = async (endpoint, setter) => {
     try {
-      setLoading(true);
+ 
       const res = await fetch(`http://localhost:5000${endpoint}`);
       const data = await res.json();
       setter(data);
     } catch {
-      setError("Failed to fetch data");
+      console.log("error");
     }
-    setLoading(false);
+  
   };
 
   useEffect(() => {

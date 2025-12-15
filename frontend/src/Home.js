@@ -3,15 +3,12 @@ import React from "react";
 import "./Home.css";
 //import products from "./products.json";
 import { Link } from "react-router-dom";
-const cartIcon = `${process.env.PUBLIC_URL}/images/shopping-cart.png`;
 
 
 
 
 function Home({ addToCart, cartCount}) {
 const [searchText, setSearchText] = useState("");
-const [isMenuOpen, setIsMenuOpen] = useState(false);
-const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 const [productList, setProductList] = useState([]);
 const [activeCategory, setActiveCategory] = useState("");
 

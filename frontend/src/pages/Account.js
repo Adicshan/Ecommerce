@@ -1,14 +1,12 @@
 // src/pages/Account.js
 import React, { useState, useEffect } from "react";
 import "../Home.css";                // same CSS used by Home
-import products from "../products.json"; // same products list
+// same products list
 import { Link, useNavigate } from "react-router-dom";
-
-const cartIcon = `${process.env.PUBLIC_URL}/images/shopping-cart.png`;
 
 function Account() {
   const navigate = useNavigate();
-  const [user, setUser] = useState(null);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [productList, setProductList] = useState([]);
   const [activeCategory, setActiveCategory] = useState("");
@@ -31,16 +29,9 @@ function Account() {
 
   useEffect(() => {
     const stored = localStorage.getItem("user");
-    if (stored) setUser(JSON.parse(stored));
+    if (stored) console.log("user saved");
     else navigate("/login");
   }, [navigate]);
-
-  const logout = () => {
-    localStorage.removeItem("user");
-    navigate("/");
-  };
-
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
 
    const handleSearch = async () => {

@@ -11,8 +11,7 @@ import Product from "./Product";
 import Cart from "./Cart";
 import OrderForm from "./OrderForm";
 import Account from "./pages/Account";
-import HowToBuy from "./pages/HowToBuy";
-import CatalogPage from "./pages/CatalogPage";
+
 
 /* ADMIN PAGES */
 import AdminHome from "./admin/adminHome";
