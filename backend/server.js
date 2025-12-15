@@ -16,7 +16,7 @@ app.use("/api/orders", require("./routes/orders"));  // <-- NEW
 
 
 const adminAuth = require("./routes/adminAuth");
-const Product = require("./models/Product");
+
 app.use("/api/admin/auth", adminAuth);
 
 app.use("/api/admin/products", require("./routes/adminProduct"));
@@ -38,6 +38,7 @@ mongoose
   .catch((err) => console.log("DB Error:", err));
 
 // Start Server
-app.listen(process.env.PORT, () => {
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
   console.log(`Server running on port ${process.env.PORT}`);
 });
