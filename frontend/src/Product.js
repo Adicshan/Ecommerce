@@ -11,7 +11,7 @@ function Product({ addToCart }) {
 
   useEffect(() => {
     async function loadProduct() {
-      const res = await fetch(`http://localhost:5000/api/products/${id}`);
+      const res = await fetch(`https://ecommerce-83qh.onrender.com/api/products/${id}`);
       const data = await res.json();
       setProduct(data);
     }
