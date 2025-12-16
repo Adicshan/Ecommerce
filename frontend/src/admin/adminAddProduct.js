@@ -80,7 +80,7 @@ function AdminAddProduct() {
 
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:5000/api/admin/products", {
+      const res = await fetch("https://ecommerce-83qh.onrender.com/api/admin/products", {
         method: "POST",
         body: data,
       });

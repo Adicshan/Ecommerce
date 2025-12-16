@@ -20,7 +20,7 @@ function AdminDashboard() {
   const fetchData = async (endpoint, setter) => {
     try {
  
-      const res = await fetch(`http://localhost:5000${endpoint}`);
+      const res = await fetch(`https://ecommerce-83qh.onrender.com${endpoint}`);
       const data = await res.json();
       setter(data);
     } catch {
@@ -44,7 +44,7 @@ function AdminDashboard() {
   }
 
   try {
-    const res = await fetch("http://localhost:5000/api/admin/products/delete", {
+    const res = await fetch("https://ecommerce-83qh.onrender.com/api/admin/products/delete", {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ productId, pin})

@@ -19,7 +19,7 @@ const [activeCategory, setActiveCategory] = useState("");
     if (searchText === "") {
     const fetchProducts = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/products");
+        const res = await fetch("https://ecommerce-83qh.onrender.com/api/products");
         const data = await res.json();
         setProductList(data);
       } catch (err) {

@@ -52,7 +52,7 @@ function AdminHome() {
 
   const handleAdminLogin = async () => {
     try {
-      await axios.post("http://localhost:5000/api/admin/auth/login", {
+      await axios.post("https://ecommerce-83qh.onrender.com/api/admin/auth/login", {
         email: adminData.email,
         password: adminData.password,
       });
@@ -87,7 +87,7 @@ function AdminHome() {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/admin/auth/signup", {
+      await axios.post("https://ecommerce-83qh.onrender.com/api/admin/auth/signup", {
         name: adminData.name,
         email: adminData.email,
         mobile: adminData.mobile,
